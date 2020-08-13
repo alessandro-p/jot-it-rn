@@ -4,6 +4,7 @@ import React from 'react';
 import {Icon} from 'react-native-elements';
 
 import theme from '../theme';
+import {t} from '../utils/locales';
 import {HomeStack} from './stacks/HomeStack';
 
 export enum AvailableRoutes
@@ -42,7 +43,7 @@ const AppNavigation = () =>
     return (
         <NavigationContainer>
             <MainTabNavigation.Navigator screenOptions={main_tab_screen_options} tabBarOptions={main_tab_bar_options}>
-                <MainTabNavigation.Screen options={{title: 'Home'}} name='home' component={HomeStack} />
+                <MainTabNavigation.Screen options={{title: t('screens.home')}} name='home' component={HomeStack} />
             </MainTabNavigation.Navigator>
         </NavigationContainer>
     );

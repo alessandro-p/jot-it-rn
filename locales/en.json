@@ -1,0 +1,8 @@
+{
+    "screens": {
+        "home": "Home"
+    },
+    "home": {
+        "title": "Hello i18n"
+    }
+}
