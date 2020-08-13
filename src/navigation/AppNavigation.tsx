@@ -6,10 +6,12 @@ import {Icon} from 'react-native-elements';
 import theme from '../theme';
 import {t} from '../utils/locales';
 import {HomeStack} from './stacks/HomeStack';
+import {SummaryStack} from './stacks/SummaryStack';
 
 export enum AvailableRoutes
 {
     HOME = 'home',
+    SUMMARY = 'summary',
     CATEGORIES = 'categories'
 }
 
@@ -31,6 +33,8 @@ const main_tab_screen_options = ({route}: {route: RouteProp<Record<string, objec
             {
                 case AvailableRoutes.HOME:
                     return <Icon name='home' color={color} type={'MaterialIcons'} size={theme.icon_size.md} />;
+                case AvailableRoutes.SUMMARY:
+                    return <Icon name='list' color={color} type={'MaterialIcons'} size={theme.icon_size.md} />;
 
                 default:
                     return <></>;
@@ -45,6 +49,7 @@ const AppNavigation = () =>
         <NavigationContainer>
             <MainTabNavigation.Navigator screenOptions={main_tab_screen_options} tabBarOptions={main_tab_bar_options}>
                 <MainTabNavigation.Screen options={{title: t('screens.home')}} name='home' component={HomeStack} />
+                <MainTabNavigation.Screen options={{title: t('screens.summary')}} name='summary' component={SummaryStack} />
             </MainTabNavigation.Navigator>
         </NavigationContainer>
     );

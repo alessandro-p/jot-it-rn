@@ -1,6 +1,7 @@
 {
     "screens": {
-        "home": "Home"
+        "home": "Home",
+        "summary": "Summary"
     },
     "home": {
         "add_expense_btn": "Expense",
@@ -13,5 +14,13 @@
     "categories": {
         "search_placeholder": "Category...",
         "pick": "Pick"
+    },
+    "summary": {
+        "total": "Total {{node}}",
+        "incomes": "Incomes",
+        "expenses": "Expenses"
+    },
+    "errors": {
+        "invalid_value": "The value you inserted is not valid"
     }
 }
