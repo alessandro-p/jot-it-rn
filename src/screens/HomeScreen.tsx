@@ -1,3 +1,4 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {Input} from 'react-native-elements';
 import styled from 'styled-components/native';
@@ -25,6 +26,8 @@ const SuccessMessage = styled.Text`
 
 const HomeScreen = () =>
 {
+    const navigation = useNavigation();
+
     return (
         <CustomSafeAreaView>
             <MainContainer>
@@ -37,7 +40,7 @@ const HomeScreen = () =>
                 />
                 <Input
                     placeholder={t('home.category')}
-                    onTouchStart={() => console.log('Touch started')}
+                    onTouchStart={() => navigation.navigate('categories')}
                     editable={false}
                 />
                 <ButtonContainer>

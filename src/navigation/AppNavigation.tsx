@@ -10,6 +10,7 @@ import {HomeStack} from './stacks/HomeStack';
 export enum AvailableRoutes
 {
     HOME = 'home',
+    CATEGORIES = 'categories'
 }
 
 const MainTabNavigation = createBottomTabNavigator();
