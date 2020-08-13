@@ -3,8 +3,9 @@ import 'react-native-gesture-handler';
 import React, {useEffect, useState} from 'react';
 import {StatusBar} from 'react-native';
 import {Provider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
 
-import {store} from './flux/store';
+import {persistor, store} from './flux/store';
 import {AppNavigation} from './navigation/AppNavigation';
 import {setup_18n} from './utils/locales';
 
@@ -31,8 +32,10 @@ const App = () =>
   return (
     <>
       <Provider store={store}>
-        <StatusBar barStyle='dark-content' />
-        <AppNavigation />
+        <PersistGate loading={null} persistor={persistor}>
+          <StatusBar barStyle='dark-content' />
+          <AppNavigation />
+        </PersistGate>
       </Provider>
     </>
   );
