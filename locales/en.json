@@ -3,6 +3,9 @@
         "home": "Home"
     },
     "home": {
-        "title": "Hello i18n"
+        "add_expense_btn": "Expense",
+        "add_income_btn": "Income",
+        "value": "Value",
+        "category": "Category"
     }
 }
