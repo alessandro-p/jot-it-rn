@@ -6,9 +6,12 @@
         "add_expense_btn": "Expense",
         "add_income_btn": "Income",
         "value": "Value",
-        "category": "Category"
+        "category": "Category",
+        "add_income_success": "Income added successfully",
+        "add_expense_success": "Expense added successfully"
     },
     "categories": {
-        "search_placeholder": "Category..."
+        "search_placeholder": "Category...",
+        "pick": "Pick"
     }
 }

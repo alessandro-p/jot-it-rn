@@ -2,7 +2,9 @@ import 'react-native-gesture-handler';
 
 import React, {useEffect, useState} from 'react';
 import {StatusBar} from 'react-native';
+import {Provider} from 'react-redux';
 
+import {store} from './flux/store';
 import {AppNavigation} from './navigation/AppNavigation';
 import {setup_18n} from './utils/locales';
 
@@ -28,8 +30,10 @@ const App = () =>
 
   return (
     <>
-      <StatusBar barStyle='dark-content' />
-      <AppNavigation />
+      <Provider store={store}>
+        <StatusBar barStyle='dark-content' />
+        <AppNavigation />
+      </Provider>
     </>
   );
 };
