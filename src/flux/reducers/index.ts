@@ -2,6 +2,7 @@ import {combineReducers} from 'redux';
 
 import {categories_reducer, CategoriesReducerState} from './categories';
 import {expenses_reducer, ExpensesReducerState} from './expenses';
+import {filter_reducer, FilterReducerState} from './filter';
 import {incomes_reducer, IncomesReducerState} from './incomes';
 
 export interface ApplicationState
@@ -9,12 +10,14 @@ export interface ApplicationState
     incomes: IncomesReducerState;
     expenses: ExpensesReducerState;
     categories: CategoriesReducerState;
+    filter: FilterReducerState;
 }
 
 const reducers = combineReducers<ApplicationState>({
     incomes: incomes_reducer,
     expenses: expenses_reducer,
-    categories: categories_reducer
+    categories: categories_reducer,
+    filter: filter_reducer,
 });
 
 export default reducers;

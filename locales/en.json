@@ -20,7 +20,28 @@
         "incomes": "Incomes",
         "expenses": "Expenses"
     },
+    "filter": {
+        "select_filter": "Filter",
+        "from_date": "From",
+        "to_date": "To",
+        "confirm": "Confirm",
+        "applied_filter": "Applied filter is:"
+    },
     "errors": {
         "invalid_value": "The value you inserted is not valid"
+    },
+    "months": {
+        "january": "January",
+        "february": "February",
+        "march": "March",
+        "april": "April",
+        "may": "May",
+        "june": "June",
+        "july": "July",
+        "august": "August",
+        "september": "September",
+        "october": "October",
+        "november": "November",
+        "december": "December"
     }
 }

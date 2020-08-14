@@ -5,7 +5,7 @@ import {Input} from 'react-native-elements';
 import {useDispatch} from 'react-redux';
 import styled from 'styled-components/native';
 
-import {BackNavigationButton, CustomButton, CustomSafeAreaView, Header} from '../components/common';
+import {BackNavigationButton, CustomButton, CustomSafeAreaView, Header} from '../components';
 import * as filter_actions from '../flux/actions/filter';
 import {t} from '../utils/locales';
 

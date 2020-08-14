@@ -5,8 +5,7 @@ import {Icon} from 'react-native-elements';
 
 import theme from '../theme';
 import {t} from '../utils/locales';
-import {HomeStack} from './stacks/HomeStack';
-import {SummaryStack} from './stacks/SummaryStack';
+import {HomeStack, SummaryStack} from './stacks';
 
 export enum AvailableRoutes
 {
