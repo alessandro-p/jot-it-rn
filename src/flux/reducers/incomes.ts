@@ -1,12 +1,13 @@
-import { ActionType, getType } from 'typesafe-actions';
+import {ActionType, getType} from 'typesafe-actions';
+
 import * as incomes_actions from '../actions/incomes';
 
-export interface IncomesReducerState 
+export interface IncomesReducerState
 {
     incomes: Income[];
 }
 
-export interface Income 
+export interface Income
 {
     id: string;
     value: number;
@@ -15,12 +16,16 @@ export interface Income
 }
 
 const INITIAL_STATE: IncomesReducerState = {
-    incomes: []
+    incomes: [
+        {id: '8a8669b9-0fa6-41ab-b84b-1908d6bc450d', category: 'Stipendio', timestamp: 1594598400000, value: 999},
+        {id: '8a8669b9-0fa6-41ab-b84b-1908d6bc471d', category: 'Stipendio', timestamp: 1596326400000, value: 999},
+        {id: '8a8669b9-0fa6-41ab-b84b-1908d6bc472d', category: 'Nonna', timestamp: 1596585600000, value: 3000},
+    ]
 };
 
-const incomes_reducer = (state = INITIAL_STATE, action: ActionType<typeof incomes_actions>): IncomesReducerState => 
+const incomes_reducer = (state = INITIAL_STATE, action: ActionType<typeof incomes_actions>): IncomesReducerState =>
 {
-    switch (action.type)
+    switch(action.type)
     {
         case (getType(incomes_actions.add_income)):
             return {
@@ -37,4 +42,4 @@ const incomes_reducer = (state = INITIAL_STATE, action: ActionType<typeof income
     }
 };
 
-export { incomes_reducer };
+export {incomes_reducer};

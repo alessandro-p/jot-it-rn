@@ -21,12 +21,13 @@ const MainContainer = styled.View`
 
 const ListViewSection = styled.View`
     display: flex;
-    flex: 2;
+    flex: 4;
 `;
 
 const FooterSection = styled.View`
     display: flex;
     flex: 1;
+    padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
 `;
