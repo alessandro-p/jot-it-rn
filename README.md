@@ -3,6 +3,8 @@ This repositiory was used during a React Native presentation in order to better 
 
 *Disclaimer: This guide does not use Expo*
 
+# Branch details
+
 Each branch was used to explain a different concept:
 
 - step-0-base-app &rarr; Used to show case a react native base app created through the command 
@@ -27,7 +29,17 @@ Each branch was used to explain a different concept:
 
 - step-9-mock-data &rarr; This introduces some mock data to play around
 
+# How to run (IOS)
 
+This application uses [cocoapdos](https://cocoapods.org/). In order to run it, you must install them first. 
+
+Then, clone the repository and run the following commands: 
+
+```
+yarn
+cd ios && pod install && cd -
+yarn run ios
+```
 
 
 
