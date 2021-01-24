@@ -43,7 +43,7 @@ yarn run ios
 
 # Final Result
 
-![](jot-it.gif)
+<img src="jot-it.gif" width="300">
 
 
 
