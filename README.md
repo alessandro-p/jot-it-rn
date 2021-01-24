@@ -41,6 +41,10 @@ cd ios && pod install && cd -
 yarn run ios
 ```
 
+# Final Result
+
+![](jot-it.gif)
+
 
 
 
